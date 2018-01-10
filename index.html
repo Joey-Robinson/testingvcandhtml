@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Collapsible sidebar using Bootstrap 3</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="card container-fluid">
+        <header id="contentHeader">
+          <h1>test</h1>
+        </header>
+      </div>
+        <div class="wrapper">
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3 id="h3header">Test</h3>
+                </div>
+                <ul class="list-unstyled components" id="pinfo">
+                    <p>About me</p>
+                      <p>twitter feed :)</p>
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="true"></a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"></a>
+                </ul>
+            </nav>
+            
+            <div id="content">
+              <nav class="navbar navbar-default" id="testid">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                      <i class=""></i>
+                      <span>&#8646;</span>
+                    </button>
+                  </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        </div>
+                        <h1>test</h1>
+                        <h1>test</h1>
+                        <h1>test</h1>
+                        <h1>test</h1>
+                        <h1>test</h1>
+                        <h1>test</h1>
+                        <h1>test</h1>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script>
+    </body>
+</html>
