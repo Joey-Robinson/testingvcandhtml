@@ -7,7 +7,7 @@
   min-width: 250px;
   max-width: 250px;
   height: fit-content;
-  background-color: rgb(247, 128, 148);
+  background-color: rgb(247, 241, 241);
 }
 
 #sidebar.active {
@@ -55,7 +55,7 @@ a[aria-expanded="true"]::before {
 
 #sidebarCollapse {
   background-color: white;
-  color: #50131c;;
+  color: #50131c;
   border: none;
   font-size: 25px;
 }
