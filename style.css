@@ -4,10 +4,10 @@
 }     
 
 #sidebar {
-  min-width: 250px;
-  max-width: 250px;
+  width: 25rem;
   height: fit-content;
-  background-color: rgb(247, 241, 241);
+  background-color: white;
+  border: none;
 }
 
 #sidebar.active {
@@ -15,7 +15,7 @@
 }
 
 a[data-toggle="collapse"] {
-  position: relative;
+  position: absolute;
 }
 
 a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
@@ -54,6 +54,8 @@ a[aria-expanded="true"]::before {
 }
 
 #sidebarCollapse {
+  position: absolute;
+  left: 0;
   background-color: white;
   color: #50131c;
   border: none;
@@ -67,3 +69,5 @@ a[aria-expanded="true"]::before {
 #containerContent {
   width: auto;
 }
+
+
