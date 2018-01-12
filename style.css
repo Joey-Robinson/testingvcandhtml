@@ -3,71 +3,41 @@
   align-items: stretch;
 }     
 
-#sidebar {
+#sidebarOne {
   width: 25rem;
   height: fit-content;
-  background-color: white;
+  background-color: transparent;
   border: none;
 }
 
-#sidebar.active {
+#sidebarOne.active {
   margin-left: -250px;
 }
 
-a[data-toggle="collapse"] {
-  position: absolute;
-}
-
-a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
-  content: '\e259';
-  display: block;
-  position: absolute;
-  right: 20px;
-  font-family: 'Glyphicons Halflings';
-  font-size: 0.6em;
-}
-
-a[aria-expanded="true"]::before {
-  content: '\e260';
-}
-
-#bs-example-navbar-collapse-1 {
-  background-color: white;
-  border: none;
-  outline: none;
-  text-decoration: none;
-}
-
-#testid {
-  background-color: white;
+#testidOne {
+  background-color: transparent;
   border: none;
   outline: none;
 }
 
-#h3header {
-  text-decoration: underline;
+#poneinfo {
   padding-left: 5px;
 }
 
-#pinfo {
-  padding-left: 5px;
-}
-
-#sidebarCollapse {
+#sidebarCollapseOne {
   position: absolute;
   left: 0;
-  background-color: white;
+  background-color: transparent;
   color: #50131c;
   border: none;
   font-size: 25px;
 }
 
-#contentHeader {
+#contentHeaderOne {
   text-align: center;
+  text-decoration: underline;
+  padding-left: 5px;
 }
 
-#containerContent {
-  width: auto;
-}
 
 
